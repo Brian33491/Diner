@@ -182,9 +182,12 @@ footer {
 
 .footer-bottom {
     margin-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 253, 253, 0.1);
     padding-top: 1rem;
     text-align: center; 
+}
+.footer-columns h3{
+    color: white;
 }
 
 // end footer
