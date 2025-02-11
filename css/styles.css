@@ -483,10 +483,15 @@ footer a {
   display: grid;
   gap: 2rem;
   padding: 1rem 0;
+  justify-content: center; /* Center the columns horizontally */
 }
 
 .footer-column {
-  text-align: left;
+  text-align: center; /* Center text within each column */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
 }
 
 .footer-column h3 {
@@ -504,6 +509,7 @@ footer a {
   margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
+  text-align: center; /* Center the bottom text */
 }
 
 @media only screen and (min-width: 35rem) {
