@@ -37,7 +37,7 @@ body {
   
   /* Card styling */
   .allCards section {
-    background: white;
+    background: rgb(136, 233, 204);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -48,26 +48,22 @@ body {
     margin-bottom: 2.5rem;
   }
   
-  .allCards section:hover {
-    transform: translateY(-5px);
-  }
   
   .allCards section img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
   }
   
   .allCards section h2 {
     font-size: 1.5rem;
     margin: 1rem 0;
-    color: #333;
+    color: #000000;
   }
   
   .allCards section p {
     padding: 0 1rem;
     font-size: 1rem;
-    color: #555;
+    color: #000000;
   }
   
   .allCards section a {
@@ -75,7 +71,7 @@ body {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
     background-color: #ff6347;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.2s;
@@ -141,19 +137,6 @@ ul.open.menuLinks{
 #myButton.open::before{
     content: "x";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* --------------------------- MAIN --------------------------- */
