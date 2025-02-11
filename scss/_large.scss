@@ -4,6 +4,11 @@
       justify-items: center;
     }
   }
+  @media (min-width: 1024px) {
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    }
+}
 
 header, nav, main {
     max-width: 960px;

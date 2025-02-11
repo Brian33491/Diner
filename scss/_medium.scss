@@ -4,5 +4,10 @@
       justify-items: center;
     }
   }
+  @media (min-width: 768px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
   
 /* NAVIGATION STUFF GOES HERE  */

@@ -4,7 +4,11 @@
       justify-items: center;
     }
   }
-  
+  @media (max-width: 767px) {
+    .footer-columns {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
     -webkit-text-size-adjust: 100%;
@@ -170,14 +174,43 @@ main {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: $primaryColor
+    background-color: $primaryColor;
+    padding: 2rem 0;
 } // end footer wrapper
 
 footer {
     font-size: .85rem;
-    padding: 1rem $gutter;
+    padding: 0 $gutter;
     color: $greyColor;
     text-align: center;
     line-height: $leading;
     a {color: $greyColor;}
-}// end footer
+} // end footer
+
+.footer-columns {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-column p {
+    margin: 0;
+    color: $greyColor;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+// end footer

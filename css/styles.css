@@ -307,6 +307,11 @@ template {
     justify-items: center;
   }
 }
+@media (max-width: 767px) {
+  .footer-columns {
+    grid-template-columns: 1fr; /* One column for small screens */
+  }
+}
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -460,17 +465,45 @@ main p {
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #1d295f;
+  padding: 2rem 0;
 }
 
 footer {
   font-size: 0.85rem;
-  padding: 1rem 10px;
+  padding: 0 10px;
   color: #ccc;
   text-align: center;
   line-height: 150%;
 }
 footer a {
   color: #ccc;
+}
+
+.footer-columns {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-column p {
+  margin: 0;
+  color: #ccc;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -482,6 +515,11 @@ footer a {
     justify-items: center;
   }
 }
+@media only screen and (min-width: 35rem) and (min-width: 768px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
 @media only screen and (min-width: 64rem) {
   /* NAVIGATION STUFF GOES HERE  */
 }
@@ -489,6 +527,11 @@ footer a {
   .allCards {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+  }
+}
+@media only screen and (min-width: 64rem) and (min-width: 1024px) {
+  .footer-columns {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
   }
 }
 @media only screen and (min-width: 64rem) {
